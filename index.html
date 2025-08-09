@@ -1,67 +1,204 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <title>Galería Musical</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Estudio Musical Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-
-  <header>
-    <h1>🎧 Mi Galería Musical</h1>
+  <header class="main-header">
+    <nav class="navbar">
+      <div class="logo">
+        <h1></h1>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#playlist">Playlist</a></li>
+        <li><a href="#artistas">Artistas</a></li>
+      </ul>
+    </nav>
   </header>
-  <section class="hero">
-  <div class="hero-content">
-    <h2>Descubre Música Increíble</h2>
-    <p>Los mejores videos musicales y artistas en un solo lugar</p>
-    <button class="cta-button">Explorar Ahora</button>
-  </div>
-</section>
-
   <main>
-    <!-- Parte A: Video Musical -->
-    <section class="video-gallery">
-      <h2>Video Musical Favorito</h2>
-      <iframe src="" allowfullscreen></iframe>
-    </section>
-
-    <!-- Parte B: Tarjetas de Artistas -->
-    <section class="artist-section">
-      <h2>Artistas Destacados</h2>
-      <div class="artist-cards">
-        <div class="artist-card">
-          <img src="insaciable.jpg" alt="Eddier Posada">
-          <h3>Eddier Posada</h3>
-          <p>Género: Regional mexicana</p>
-        </div>
-        <!-- Puedes agregar más tarjetas aquí -->
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Descubre Música Increíble</h2>
+        <p>Los mejores videos musicales y artistas en un solo lugar</p>
+        <button class="cta-button">Explorar Ahora</button>
       </div>
     </section>
+    <section id="videos" class="video-section">
+      <div class="container">
+        <h2 class="section-title">Videos Destacados</h2>
+        <div class="video-grid">
+          <!-- Video 1 -->
+          <article class="video-card">
 
-    <!-- Parte C: Lista de Reproducción -->
-    <section class="playlist-section">
-      <section class="playlist-section">
-  <h2>Mi Playlist</h2>
-  <ul>
-    <li class="track">
-      <span class="track-title">Insaciable</span> -
-      <span class="track-artist">Eddier Posada</span>
-      <span class="track-duration">3:45</span>
-      <button class="play-button">▶</button>
-    </li>
-    <li class="track">
-      <span class="track-title">A Donde Vayas</span> -
-      <span class="track-artist">Eddier Posada</span>
-      <span class="track-duration">3:30</span>
-      <button class="play-button">▶</button>
-    </li>
-    <li class="track">
-      <span class="track-title">Me Tomas y Me Dejas</span> -
-      <span class="track-artist">Omairy Nuñez & Eddier Posada</span>
-      <span class="track-duration">4:10</span>
-      <button class="play-button">▶</button>
-    </li>
-  </ul>
-</section>
+            <div class="video-thumbnail">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/R1qAf2G7qwQ?si=7PNK04wYvo9KJ8C-"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <h3>Insaciable</h3>
+              <p>Eddier Posada</p>
+              <span class="genre">Regional mexicana</span>
+            </div>
+          </article>
+          <!-- Video 2 -->
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/S-bfJjikj9Q?si=jRPMzcjUXyhbmfmJ"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>A Donde Vayas</h3>
+              <p>Eddier Posada</p>
+              <span class="genre">Regional mexicana</span>
+            </div>
+          </article>
+          <!-- Video 3 -->
+          <article class="video-card">
+            <div class="video-thumbnail">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/4wcajQHFxcQ?si=rrG7e4ZikEh3g6t0"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="video-info">
+              <h3>Me Tomas y Me Dejas</h3>
+              <p>Eddier Posada y Omairy Nuñez </p>
+              <span class="genre">Desconocida</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section id="playlist" class="playlist-section">
+      <div class="container">
+        <h2 class="section-title">Mi Playlist Favorita</h2>
+        <div class="playlist-container">
+          <ol class="playlist">
+            <li class="track">
+              <div class="track-info">
+                <span class="track-title">Porque te vas?</span>
+                <span>
+                  <audio controls>
+                    <source src="audio/porquetevas.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
+                </span>
+                <span class="track-artist">Jeanette</span>
+              </div>
+              <span class="track-duration">3:22</span>
+            </li>
+            <li class="track">
+              <div class="track-info">
+                <span class="track-title">Pero Tu No Estas</span>
+                <span>
+                  <audio controls>
+                    <source src="audio/perotunoestas.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
+                </span>
+                <span class="track-artist">Luis Angel</span>
+              </div>
+              <span class="track-duration">2:53</span>
+            </li>
+            <li class="track">
+              <div class="track-info">
+                <span class="track-title">Paro</span>
+                <span>
+                  <audio controls>
+                    <source src="audio/paro.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
+                </span>
+                <span class="track-artist">NEJ'</span>
+              </div>
+              <span class="track-duration">3:23</span>
+            </li>
+            <li class="track">
+              <div class="track-info">
+                <span class="track-title">Esta Cobardía</span>
+                <span>
+                  <audio controls>
+                    <source src="audio/estacobardía.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
+                </span>
+                <span class="track-artist">Chiquetete</span>
+              </div>
+              <span class="track-duration">3:41</span>
+            </li>
+            <li class="track">
+              <div class="track-info">
+                <span class="track-title">Simarik</span>
+                <span>
+                  <audio controls>
+                    <source src="audio/simarik.mp3" type="audio/mpeg">
+                    Tu navegador no soporta el elemento de audio.
+                  </audio>
+                </span>
+                <span class="track-artist">Tarkan</span>
+              </div>
+              <span class="track-duration">3:56</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="artistas" class="artist-section">
+      <div class="container">
+        <h2 class="section-title">Artistas</h2>
+        <div class="artist-grid">
+          <!-- Artista 1 -->
+          <article class="artist-card">
+            <div class="artist-thumbnail">
+              <img src="imagenes/insaciable.jpg" alt="Eddier Posada">
+            </div>
+            <div class="artist-info">
+              <h3>Eddier Posada</h3>
+              <p></p>
+              <span class="genre">Género: Regional mexicana</span>
+            </div>
+          </article>
+          <!-- Artista 2 -->
+          <article class="artist-card">
+            <div class="artist-thumbnail">
+              <img src="imagenes/jeanette.jpg" alt="Jeanette">
+            </div>
+            <div class="artist-info">
+              <h3>Jeanette</h3>
+              <p></p>
+              <span class="genre">Género: Pop</span>
+            </div>
+          </article>
+          <!-- Artista 3 -->
+          <article class="artist-card">
+            <div class="artist-thumbnail">
+              <img src="imagenes/luis.jpg" alt="Luis Miguel">
+            </div>
+            <div class="artist-info">
+              <h3>Luis Miguel</h3>
+              <p></p>
+              <span class="genre">Género: Pop latino </span>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
 </body>
+
 </html>
